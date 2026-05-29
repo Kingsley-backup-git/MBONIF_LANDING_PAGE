@@ -1,5 +1,4 @@
 import ImgSample from "../assets/IMG_1695.jpeg";
-import DefaultMarqueeRow from "./defaultMarqueeRow";
 import { FiInstagram } from "react-icons/fi";
 import MarqueeImport from "react-fast-marquee";
 const Marquee = (MarqueeImport as any).default ?? MarqueeImport;
