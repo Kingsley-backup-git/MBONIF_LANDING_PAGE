@@ -1,0 +1,580 @@
+@import "tailwindcss";
+
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+
+
+.item {
+  transition: all;
+  transition-duration: 0.5s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+
+.item-child {
+   transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+.item:hover > .item-child {
+    transform: translateY(-100%);
+  opacity:0;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+.item::after {
+  content : "SHOP";
+  background-color : white;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+color: black;
+  opacity: 0;
+@apply  w-full h-full absolute translate-y-[100%] items-center flex px-7
+}
+
+.item:hover::after {
+  transform: translateY(-100%);
+  opacity:1;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+.itemOne {
+  transition: all;
+  transition-duration: 0.5s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+
+.itemOne-child {
+   transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+.itemOne:hover > .itemOne-child {
+    transform: translateY(-100%);
+  opacity:0;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+.itemOne::after {
+  content : "ABOUT";
+  background-color : white;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+color: black;
+  opacity: 0;
+@apply  w-full h-full absolute translate-y-[100%] items-center flex px-7
+}
+
+.itemOne:hover::after {
+  transform: translateY(-100%);
+  opacity:1;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+.itemTwo {
+  transition: all;
+  transition-duration: 0.5s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+
+.itemTwo-child {
+   transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+.itemTwo:hover > .itemTwo-child {
+    transform: translateY(-100%);
+  opacity:0;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+.itemTwo::after {
+  content : "JOURNAL";
+  background-color : white;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+color: black;
+  opacity: 0;
+@apply  w-full h-full absolute translate-y-[100%] items-center flex px-7
+}
+
+.itemTwo:hover::after {
+  transform: translateY(-100%);
+  opacity:1;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+.itemThree {
+  transition: all;
+  transition-duration: 0.5s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+
+.itemThree-child {
+   transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+position: relative;
+}
+.itemThree:hover > .itemThree-child {
+    transform: translateY(-100%);
+  opacity:0;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+.itemThree::after {
+  content : "CONTACT";
+  background-color : white;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+color: black;
+  opacity: 0;
+@apply  w-full h-full absolute translate-y-[100%] items-center flex px-7
+}
+
+.itemThree:hover::after {
+  transform: translateY(-100%);
+  opacity:1;
+    transition: all;
+  transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+.card:hover  .arrowOne {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowOne {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowTwo {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.card:hover .arrowTwo{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.shopTitle::after {
+content: "";
+position:absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+background-color: white;
+height: 1px;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 0;
+}
+
+.shopTitle:hover::after {
+width: 100%;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 1;
+}
+
+
+.shopTitle:hover  .arrowThree {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowThree {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowFour {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.shopTitle:hover .arrowFour{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+/*follow*/
+
+
+.followTitle::after {
+content: "";
+position:absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+background-color: white;
+height: 1px;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 0;
+}
+
+.followTitle:hover::after {
+width: 100%;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 1;
+}
+
+
+.followTitle:hover  .arrowFive {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowFive {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowSix {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.followTitle:hover .arrowSix{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+/*container */
+
+.container-item::after {
+content: "";
+position:absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+background-color: white;
+height: 1px;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 0;
+}
+
+.sectionTen:hover .container-item::after {
+width: 100%;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 1;
+}
+
+
+.sectionTen:hover  .arrowSeven {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowSeven {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowEight {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.sectionTen:hover .arrowEight{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+/* Section Eleven contain one */
+
+
+.container-item-one::after {
+content: "";
+position:absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+background-color: white;
+height: 1px;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 0;
+}
+
+.sectionEleven:hover .container-item-one::after {
+width: 100%;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 1;
+}
+
+
+.sectionEleven:hover  .arrowNine {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowNine {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowTen {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.sectionEleven:hover .arrowTen{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+/* Section Eleven contain two */
+
+
+.container-item-two::after {
+content: "";
+position:absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+background-color: white;
+height: 1px;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 0;
+}
+
+.sectionTwelve:hover .container-item-two::after {
+width: 100%;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 1;
+}
+
+
+.sectionTwelve:hover  .arrowEleven {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowEleven {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowTwelve {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.sectionTwelve:hover .arrowTwelve{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+/* Section Eleven contain three */
+
+
+.container-item-three::after {
+content: "";
+position:absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+background-color: white;
+height: 1px;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 0;
+}
+
+.sectionThirteen:hover .container-item-three::after {
+width: 100%;
+transition: all;
+transition-duration: 0.3s;
+transition-timing-function: linear;
+opacity: 1;
+}
+
+
+.sectionThirteen:hover  .arrowThirteen {
+transform: translate(122%, -122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowThirteen {
+  transform: translate(0);
+  transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+.arrowFourteen {
+transform: translate(-122%, 122%);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.sectionThirteen:hover .arrowFourteen{
+transform: translate(0);
+transition: all;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
